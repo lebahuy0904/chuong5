@@ -1,0 +1,87 @@
+body {
+background-color: #dedede;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 15px;
+}
+
+h1 {
+text-align: center;
+font-size: 32px;
+}
+
+a {
+color: #000;
+text-decoration: none;
+font-weight: bold;
+}
+
+p {
+font-size: 18px;
+text-align: center;
+line-height: 1.5;
+max-width: 800px;
+margin: 10px auto 20px auto;
+}
+
+/* Cấu trúc container chứa danh sách hình ảnh */
+.grid {
+text-align: center;
+}
+
+figure {
+display: inline-block;
+vertical-align: top;
+width: 100%;            
+margin: 10px 0;
+padding: 10px;
+box-sizing: border-box;  
+background-color: #ffffff;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+width: 100%;
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+border-radius: 4px;
+}
+
+figcaption {
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+margin-top: 10px;
+color: #333;
+}
+
+footer {
+text-align: center;
+margin: 30px 0 15px 0;
+}
+
+/* ==========================================
+2. TRUY VẤN PHƯƠNG TIỆN (MEDIA QUERIES)
+========================================== */
+
+@media screen and (min-width: 772px) {
+figure {
+width: 45vw;           
+margin: 1%;
+}
+
+figure img {
+max-height: 30vh;      
+object-fit: cover;
+}
+}
+
+
+@media screen and (min-width: 998px) {
+figure {
+width: 30vw;           
+}
+}
